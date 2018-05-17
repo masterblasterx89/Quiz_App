@@ -6,7 +6,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,15 +21,20 @@
                 android:layout_height="wrap_content"
                 android:minHeight="@dimen/play_button_height"
                 android:minWidth="@dimen/play_button_width"
-                android:text="Play">
+                android:text="Play"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorPrimary">
 
             </Button>
 
             <TextView
                 android:id="@+id/first_question"
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="What song is playing?">
+                android:gravity="center"
+                android:text="What song is playing?"
+                android:textSize="24sp"
+                android:textColor="@color/fontColor">
 
             </TextView>
 
@@ -48,22 +54,26 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Answer 1" />
+                    android:text="Answer 1"
+                    android:textColor="@color/fontColor"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Answer 2" />
+                    android:text="Answer 2"
+                    android:textColor="@color/fontColor"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Answer 3" />
+                    android:text="Answer 3"
+                    android:textColor="@color/fontColor"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Answer 4" />
+                    android:text="Answer 4"
+                    android:textColor="@color/fontColor"/>
             </RadioGroup>
         </LinearLayout>
 
@@ -79,7 +89,9 @@
                 android:layout_height="wrap_content"
                 android:minHeight="@dimen/play_button_height"
                 android:minWidth="@dimen/play_button_width"
-                android:text="Play">
+                android:text="Play"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorPrimary">
 
             </Button>
 
@@ -87,7 +99,8 @@
                 android:id="@+id/second_question"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="What are the next 3 words in the song">
+                android:text="What are the next 3 words in the song"
+                android:textColor="@color/fontColor">
 
             </TextView>
 
@@ -119,7 +132,9 @@
                 android:layout_height="wrap_content"
                 android:minHeight="@dimen/play_button_height"
                 android:minWidth="@dimen/play_button_width"
-                android:text="Play">
+                android:text="Play"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorPrimary">
 
             </Button>
 
@@ -127,7 +142,8 @@
                 android:id="@+id/third_question"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Who is in this band?">
+                android:text="Who is in this band?"
+                android:textColor="@color/fontColor">
 
             </TextView>
 
@@ -174,7 +190,9 @@
                 android:layout_height="wrap_content"
                 android:minHeight="@dimen/play_button_height"
                 android:minWidth="@dimen/play_button_width"
-                android:text="Play">
+                android:text="Play"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorPrimary">
 
             </Button>
 
@@ -182,7 +200,8 @@
                 android:id="@+id/forth_question"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="What song is playing?">
+                android:text="What song is playing?"
+                android:textColor="@color/fontColor">
 
             </TextView>
 
@@ -232,7 +251,9 @@
                 android:layout_height="wrap_content"
                 android:minHeight="@dimen/play_button_height"
                 android:minWidth="@dimen/play_button_width"
-                android:text="Play">
+                android:text="Play"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorPrimary">
 
             </Button>
 
@@ -240,7 +261,8 @@
                 android:id="@+id/fifth_question"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="What song is playing?">
+                android:text="What song is playing?"
+                android:textColor="@color/fontColor">
 
             </TextView>
 
