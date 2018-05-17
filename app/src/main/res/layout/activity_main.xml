@@ -11,15 +11,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="@dimen/layout_margin"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/first_play_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:minHeight="5dp"
-                android:minWidth="5dp"
+                android:minHeight="@dimen/play_button_height"
+                android:minWidth="@dimen/play_button_width"
                 android:text="Play">
 
             </Button>
@@ -27,7 +27,219 @@
             <TextView
                 android:id="@+id/first_question"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What song is playing?">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Answer 1" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Answer 2" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Answer 3" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Answer 4" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_margin"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/second_play_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/play_button_height"
+                android:minWidth="@dimen/play_button_width"
+                android:text="Play">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/second_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What are the next 3 words in the song">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/edit_text_layout_margin_left"
+                android:layout_marginRight="@dimen/edit_text_layout_margin_right" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_margin"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/third_play_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/play_button_height"
+                android:minWidth="@dimen/play_button_width"
+                android:text="Play">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/third_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Who is in this band?">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer 1" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer 2" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer 3" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer 4" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_margin"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/forth_play_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/play_button_height"
+                android:minWidth="@dimen/play_button_width"
+                android:text="Play">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/forth_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What song is playing?">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Answer 1" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Answer 2" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Answer 3" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Answer 4" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_margin"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/fifth_play_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/play_button_height"
+                android:minWidth="@dimen/play_button_width"
+                android:text="Play">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/fifth_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="What song is playing?">
 
             </TextView>
