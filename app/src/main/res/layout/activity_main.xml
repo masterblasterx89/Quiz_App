@@ -6,301 +6,384 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/colorPrimary">
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/layout_margin"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/first_play_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:minHeight="@dimen/play_button_height"
-                android:minWidth="@dimen/play_button_width"
-                android:text="Play"
-                android:backgroundTint="@color/colorAccent"
-                android:textColor="@color/colorPrimary">
-
-            </Button>
-
-            <TextView
-                android:id="@+id/first_question"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="What song is playing?"
-                android:textSize="24sp"
-                android:textColor="@color/fontColor">
-
-            </TextView>
+            android:layout_marginLeft="@dimen/questionLayoutSideMargin"
+            android:layout_marginRight="@dimen/questionLayoutSideMargin"
+            android:layout_marginTop="@dimen/questionLayoutTopBottomMargin"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/question_padding">
 
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:orientation="vertical">
-
-            <RadioGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Answer 1"
-                    android:textColor="@color/fontColor"/>
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Answer 2"
-                    android:textColor="@color/fontColor"/>
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Answer 3"
-                    android:textColor="@color/fontColor"/>
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Answer 4"
-                    android:textColor="@color/fontColor"/>
-            </RadioGroup>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/layout_margin"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/second_play_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:minHeight="@dimen/play_button_height"
-                android:minWidth="@dimen/play_button_width"
-                android:text="Play"
-                android:backgroundTint="@color/colorAccent"
-                android:textColor="@color/colorPrimary">
-
-            </Button>
-
-            <TextView
-                android:id="@+id/second_question"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="What are the next 3 words in the song"
-                android:textColor="@color/fontColor">
-
-            </TextView>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:orientation="horizontal">
-
-            <EditText
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/edit_text_layout_margin_left"
-                android:layout_marginRight="@dimen/edit_text_layout_margin_right" />
+                android:layout_margin="@dimen/layout_margin"
+                android:orientation="horizontal">
 
+                <Button
+                    android:id="@+id/first_play_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:minHeight="@dimen/play_button_height"
+                    android:minWidth="@dimen/play_button_width"
+                    android:text="Play"
+                    android:textColor="@color/colorPrimary">
+
+                </Button>
+
+                <TextView
+                    android:id="@+id/first_question"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/mainQuestionFontPaddingLeft"
+                    android:text="What song is playing?"
+                    android:textColor="@color/fontColor"
+                    android:textSize="@dimen/questionMainFontSize">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Answer 1"
+                        android:textColor="@color/fontColor" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Answer 2"
+                        android:textColor="@color/fontColor" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Answer 3"
+                        android:textColor="@color/fontColor" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Answer 4"
+                        android:textColor="@color/fontColor" />
+                </RadioGroup>
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/layout_margin"
-            android:orientation="horizontal">
+            android:layout_marginLeft="@dimen/questionLayoutSideMargin"
+            android:layout_marginRight="@dimen/questionLayoutSideMargin"
+            android:layout_marginTop="@dimen/questionLayoutTopBottomMargin"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/question_padding">
 
-            <Button
-                android:id="@+id/third_play_btn"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="@dimen/play_button_height"
-                android:minWidth="@dimen/play_button_width"
-                android:text="Play"
-                android:backgroundTint="@color/colorAccent"
-                android:textColor="@color/colorPrimary">
+                android:layout_margin="@dimen/layout_margin"
+                android:orientation="horizontal">
 
-            </Button>
+                <Button
+                    android:id="@+id/second_play_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:minHeight="@dimen/play_button_height"
+                    android:minWidth="@dimen/play_button_width"
+                    android:text="Play"
+                    android:textColor="@color/colorPrimary">
 
-            <TextView
-                android:id="@+id/third_question"
-                android:layout_width="wrap_content"
+                </Button>
+
+                <TextView
+                    android:id="@+id/second_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What is the next word in the song?"
+                    android:textColor="@color/fontColor"
+                    android:textSize="@dimen/questionMainFontSize"
+                    android:paddingLeft="@dimen/mainQuestionFontPaddingLeft"
+                    android:layout_marginBottom="5dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Who is in this band?"
-                android:textColor="@color/fontColor">
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
 
-            </TextView>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/edit_text_layout_margin_left"
+                    android:layout_marginRight="@dimen/edit_text_layout_margin_right" />
 
-
+            </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:orientation="vertical">
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Answer 1" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Answer 2" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Answer 3" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Answer 4" />
-        </LinearLayout>
-
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/layout_margin"
-            android:orientation="horizontal">
+            android:layout_marginLeft="@dimen/questionLayoutSideMargin"
+            android:layout_marginRight="@dimen/questionLayoutSideMargin"
+            android:layout_marginTop="@dimen/questionLayoutTopBottomMargin"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/question_padding">
 
-            <Button
-                android:id="@+id/forth_play_btn"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/third_play_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:minHeight="@dimen/play_button_height"
+                    android:minWidth="@dimen/play_button_width"
+                    android:text="Play"
+                    android:textColor="@color/colorPrimary">
+
+                </Button>
+
+                <TextView
+                    android:id="@+id/third_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Who is in this band?"
+                    android:textColor="@color/fontColor"
+                    android:textSize="@dimen/questionMainFontSize"
+                    android:paddingLeft="@dimen/mainQuestionFontPaddingLeft">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:minHeight="@dimen/play_button_height"
-                android:minWidth="@dimen/play_button_width"
-                android:text="Play"
-                android:backgroundTint="@color/colorAccent"
-                android:textColor="@color/colorPrimary">
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
 
-            </Button>
-
-            <TextView
-                android:id="@+id/forth_question"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="What song is playing?"
-                android:textColor="@color/fontColor">
-
-            </TextView>
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:orientation="vertical">
-
-            <RadioGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <RadioButton
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Answer 1" />
 
-                <RadioButton
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Answer 2" />
 
-                <RadioButton
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Answer 3" />
 
-                <RadioButton
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Answer 4" />
-            </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/questionLayoutSideMargin"
+            android:layout_marginRight="@dimen/questionLayoutSideMargin"
+            android:layout_marginTop="@dimen/questionLayoutTopBottomMargin"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/question_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/forth_play_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:minHeight="@dimen/play_button_height"
+                    android:minWidth="@dimen/play_button_width"
+                    android:text="Play"
+                    android:textColor="@color/colorPrimary">
+
+                </Button>
+
+                <TextView
+                    android:id="@+id/forth_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What song is playing?"
+                    android:textColor="@color/fontColor"
+                    android:textSize="@dimen/questionMainFontSize"
+                    android:paddingLeft="@dimen/mainQuestionFontPaddingLeft">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Answer 1" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Answer 2" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Answer 3" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Answer 4" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/questionLayoutSideMargin"
+            android:layout_marginRight="@dimen/questionLayoutSideMargin"
+            android:layout_marginTop="@dimen/questionLayoutTopBottomMargin"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/question_padding"
+            android:layout_marginBottom="@dimen/questionLayoutTopBottomMargin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/fifth_play_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:minHeight="@dimen/play_button_height"
+                    android:minWidth="@dimen/play_button_width"
+                    android:text="Play"
+                    android:textColor="@color/colorPrimary">
+
+                </Button>
+
+                <TextView
+                    android:id="@+id/fifth_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What song is playing?"
+                    android:textColor="@color/fontColor"
+                    android:paddingLeft="@dimen/mainQuestionFontPaddingLeft"
+                    android:textSize="@dimen/questionMainFontSize">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Answer 1" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Answer 2" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Answer 3" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Answer 4" />
+                </RadioGroup>
+            </LinearLayout>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/layout_margin"
-            android:orientation="horizontal">
+            android:layout_marginLeft="@dimen/questionLayoutSideMargin"
+            android:layout_marginRight="@dimen/questionLayoutSideMargin"
+            android:layout_marginTop="@dimen/questionLayoutTopBottomMargin"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/questionLayoutTopBottomMargin">
 
             <Button
-                android:id="@+id/fifth_play_btn"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="@dimen/play_button_height"
-                android:minWidth="@dimen/play_button_width"
-                android:text="Play"
-                android:backgroundTint="@color/colorAccent"
-                android:textColor="@color/colorPrimary">
-
-            </Button>
-
-            <TextView
-                android:id="@+id/fifth_question"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="What song is playing?"
-                android:textColor="@color/fontColor">
-
-            </TextView>
-
-
+                android:text="Submit"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/fontColor"
+                android:textSize="@dimen/questionMainFontSize" />
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:orientation="vertical">
-
-            <RadioGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Answer 1" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Answer 2" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Answer 3" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Answer 4" />
-            </RadioGroup>
-        </LinearLayout>
-
     </LinearLayout>
 </ScrollView>
 
