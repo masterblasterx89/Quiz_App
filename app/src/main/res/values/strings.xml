@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">Quiz_App</string>
+    <string name="playString">Play</string>
+    <string name="whatSong">What song is playing?</string>
+    <string name="question1Answer1">Matchbox Twenty</string>
+    <string name="question1Answer2">3 Doors Down</string>
+    <string name="question1Answer3">Lifehouse</string>
+    <string name="question1Answer4">One Republic</string>
+
+    <string name="question2">What is the next word in the song?</string>
+
+    <string name="question3">Who is in this band?</string>
+    <string name="question3Answer1">Ryan Lewis</string>
+    <string name="question3Answer2">Nathan John Feuerstein</string>
+    <string name="question3Answer3">Benjamin Haggerty</string>
+    <string name="question3Answer4">Malcolm McCormick</string>
+
+    <string name="question4">Who sings this song?</string>
+    <string name="question4Answer1">Zedd</string>
+    <string name="question4Answer2">Cage The Elephant</string>
+    <string name="question4Answer3">Foster The People</string>
+    <string name="question4Answer4">FloBots</string>
+
+    <string name="question5">What song is playing?</string>
+    <string name="question5Answer1">Eyes on Fire</string>
+    <string name="question5Answer2">Car Raido</string>
+    <string name="question5Answer3">SAIL</string>
+    <string name="question5Answer4">Radioactive</string>
+
+    <string name="submit">Submit</string>
+
 </resources>

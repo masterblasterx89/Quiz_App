@@ -18,14 +18,15 @@ public class MainActivity extends AppCompatActivity {
 
     int numberCorrect = 0;
 
+    // Methods that play/grab the mps for the play buttons.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         Button firstPlayButton = this.findViewById(R.id.first_play_btn);
-        final MediaPlayer firstPlayMP = MediaPlayer.create(this, R.raw.test_sound);
-        firstPlayButton.setOnClickListener(new View.OnClickListener(){
+        final MediaPlayer firstPlayMP = MediaPlayer.create(this, R.raw.matchquestion1);
+        firstPlayButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
                 firstPlayMP.start();
@@ -33,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button secondPlayButton = this.findViewById(R.id.second_play_btn);
-        final MediaPlayer secondPlayMP = MediaPlayer.create(this, R.raw.test_sound);
-        secondPlayButton.setOnClickListener(new View.OnClickListener(){
+        final MediaPlayer secondPlayMP = MediaPlayer.create(this, R.raw.pilotquestion2);
+        secondPlayButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
                 secondPlayMP.start();
@@ -42,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button thirdPlayButton = this.findViewById(R.id.third_play_btn);
-        final MediaPlayer thirdPlayMP = MediaPlayer.create(this, R.raw.test_sound);
-        thirdPlayButton.setOnClickListener(new View.OnClickListener(){
+        final MediaPlayer thirdPlayMP = MediaPlayer.create(this, R.raw.mackquestion3);
+        thirdPlayButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
                 thirdPlayMP.start();
@@ -51,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button forthPlayButton = this.findViewById(R.id.forth_play_btn);
-        final MediaPlayer forthPlayMP = MediaPlayer.create(this, R.raw.test_sound);
-        forthPlayButton.setOnClickListener(new View.OnClickListener(){
+        final MediaPlayer forthPlayMP = MediaPlayer.create(this, R.raw.flobotsquestion4);
+        forthPlayButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
                 forthPlayMP.start();
@@ -60,8 +61,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button fifthPlayButton = this.findViewById(R.id.fifth_play_btn);
-        final MediaPlayer fifthPlayMP = MediaPlayer.create(this, R.raw.test_sound);
-        fifthPlayButton.setOnClickListener(new View.OnClickListener(){
+        final MediaPlayer fifthPlayMP = MediaPlayer.create(this, R.raw.sailquestion5);
+        fifthPlayButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
                 fifthPlayMP.start();
@@ -69,13 +70,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-
     }
 
-    public void submitQuiz (View view) {
+    public void submitQuiz(View view) {
 
         numberCorrect = 0;
+
+        //Grabbing what the user selected from the questions
 
 
         RadioButton getFirstAnswer = findViewById(R.id.first_answer1);
@@ -85,45 +86,54 @@ public class MainActivity extends AppCompatActivity {
         String getSecondAnswerString = getSecondAnswer.getText().toString();
 
         CheckBox getThirdAnswer1 = findViewById(R.id.third_answer1);
-
-
         CheckBox getThirdAnswer2 = findViewById(R.id.third_answer2);
+        CheckBox getThirdAnswer3 = findViewById(R.id.third_answer3);
+        CheckBox getThirdAnswer4 = findViewById(R.id.third_answer4);
 
 
-        RadioButton getForthAnswer = findViewById(R.id.forth_answer3);
+        RadioButton getForthAnswer = findViewById(R.id.forth_answer4);
 
 
         RadioButton getFifthAnswer = findViewById(R.id.fifth_answer3);
 
+        //Testing the users answer to the correct answer.
 
-        if (getFirstAnswer.isChecked())
-        {
+
+        if (getFirstAnswer.isChecked()) {
             numberCorrect = numberCorrect + 1;
         }
 
-        if (getSecondAnswerString.equals("Jim"))
-        {
+
+        if (getSecondAnswerString.equals("Ride") || getSecondAnswerString.equals("ride")) {
             numberCorrect = numberCorrect + 1;
         }
 
-        if (getThirdAnswer1.isChecked() & getThirdAnswer2.isChecked())
-        {
+        if (getThirdAnswer1.isChecked() & getThirdAnswer3.isChecked()) {
             numberCorrect = numberCorrect + 1;
         }
 
-        if (getForthAnswer.isChecked())
-        {
+        if (getThirdAnswer2.isChecked() & getThirdAnswer4.isChecked()) {
+            numberCorrect = numberCorrect - 1;
+        }
+
+        if (getForthAnswer.isChecked()) {
             numberCorrect = numberCorrect + 1;
         }
 
-        if (getFifthAnswer.isChecked())
-        {
+        if (getFifthAnswer.isChecked()) {
             numberCorrect = numberCorrect + 1;
         }
 
-        Toast.makeText(getApplicationContext(), "Number Correct " + numberCorrect + "/5.",Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "Number Correct " + numberCorrect + "/5.", Toast.LENGTH_SHORT).show();
 
 
     }
 }
+
+//"Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for "fair use"
+// for purposes such as criticism, comment, news reporting, teaching, scholarship, and research.
+// Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit,
+// educational or personal use tips the balance in favor of fair use."
+
+
 

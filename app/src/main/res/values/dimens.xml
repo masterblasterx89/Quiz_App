@@ -8,6 +8,7 @@
     <dimen name="question_padding">10dp</dimen>
     <dimen name="questionLayoutSideMargin">7dp</dimen>
     <dimen name="questionLayoutTopBottomMargin">12dp</dimen>
+    <dimen name="layoutMarginStart">10dp</dimen>
 
     <!-- Font Settings -->
     <dimen name="questionMainFontSize">20sp</dimen>
