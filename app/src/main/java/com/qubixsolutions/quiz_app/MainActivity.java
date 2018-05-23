@@ -124,6 +124,8 @@ public class MainActivity extends AppCompatActivity {
             numberCorrect = numberCorrect + 1;
         }
 
+        // Toast to display how many the user got correct. 
+
         Toast.makeText(getApplicationContext(), "Number Correct " + numberCorrect + "/5.", Toast.LENGTH_SHORT).show();
 
 
