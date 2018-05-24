@@ -4,6 +4,7 @@ import android.media.MediaPlayer;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -12,7 +13,11 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+
+
 import org.w3c.dom.Text;
+
+import java.io.Console;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -80,6 +85,9 @@ public class MainActivity extends AppCompatActivity {
 
 
         RadioButton getFirstAnswer = findViewById(R.id.first_answer1);
+        RadioButton getFirstAnswer2 = findViewById(R.id.first_answer2);
+        RadioButton getFirstAnswer3 = findViewById(R.id.first_answer3);
+        RadioButton getFirstAnswer4 = findViewById(R.id.first_answer4);
 
 
         EditText getSecondAnswer = findViewById(R.id.second_answer);
@@ -96,24 +104,22 @@ public class MainActivity extends AppCompatActivity {
 
         RadioButton getFifthAnswer = findViewById(R.id.fifth_answer3);
 
+
         //Testing the users answer to the correct answer.
 
 
         if (getFirstAnswer.isChecked()) {
             numberCorrect = numberCorrect + 1;
+        } else if (!getFirstAnswer.isChecked() && !getFirstAnswer2.isChecked() && !getFirstAnswer3.isChecked() && !getFirstAnswer4.isChecked()) {
+            System.out.print("Didn't answer question 1");
         }
 
-
-        if (getSecondAnswerString.equals("Ride") || getSecondAnswerString.equals("ride")) {
+        if (getSecondAnswerString.equalsIgnoreCase("Ride")) {
             numberCorrect = numberCorrect + 1;
         }
 
-        if (getThirdAnswer1.isChecked() & getThirdAnswer3.isChecked()) {
+        if (getThirdAnswer1.isChecked() & getThirdAnswer3.isChecked() & !getThirdAnswer2.isChecked() && !getThirdAnswer4.isChecked()) {
             numberCorrect = numberCorrect + 1;
-        }
-
-        if (getThirdAnswer2.isChecked() & getThirdAnswer4.isChecked()) {
-            numberCorrect = numberCorrect - 1;
         }
 
         if (getForthAnswer.isChecked()) {
@@ -124,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
             numberCorrect = numberCorrect + 1;
         }
 
-        // Toast to display how many the user got correct. 
+        // Toast to display how many the user got correct.
 
         Toast.makeText(getApplicationContext(), "Number Correct " + numberCorrect + "/5.", Toast.LENGTH_SHORT).show();
 
